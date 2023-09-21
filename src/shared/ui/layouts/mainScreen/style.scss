@@ -1,0 +1,23 @@
+@use '../../styleConfig';
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  background-color: styleConfig.$bg-color;
+
+  &__item {
+    padding: 14px;
+    margin: 24px;
+    border: styleConfig.$border-color 1px solid;
+    border-radius: 12px;
+    color: white;
+    background-color: styleConfig.$main-color;
+
+    &:last-child {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}

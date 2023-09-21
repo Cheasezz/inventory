@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import { inventoryPage } from '@/pages/inventory'
+</script>
 
 <template>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, vel!</p>
+  <inventoryPage />
 </template>
 
 <style lang="scss">
