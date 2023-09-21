@@ -1,0 +1,17 @@
+@use '../styleConfig';
+
+.skeleton {
+  height: 100%;
+  min-height: 0.6rem;
+  background-image: styleConfig.$gradient;
+  border-radius: 12px;
+  animation: fade 1s linear infinite alternate;
+}
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

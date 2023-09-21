@@ -1,0 +1,10 @@
+@use 'vars.scss';
+
+@mixin mainItem {
+  padding: 14px;
+  margin: 24px;
+  border: vars.$border-color 1px solid;
+  border-radius: 12px;
+  color: white;
+  background-color: vars.$main-color;
+}
