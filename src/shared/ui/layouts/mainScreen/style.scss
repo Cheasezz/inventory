@@ -1,8 +1,8 @@
-@use '../../styleConfig';
 .main {
-  width: 100vw;
+  max-width: 849px;
+  width: 100%;
   height: 100vh;
-  background-color: styleConfig.$bg-color;
+  margin: 0 auto;
   .flexRow {
     display: flex;
     justify-content: space-between;

@@ -1,6 +1,10 @@
 <script setup>
 import './style.scss'
+import { useItemStore } from '@/entities/dragCell'
+import { baseButton } from '@/shared/ui/baseButton'
 import { mySkeleton } from '@/shared/ui/skeleton'
+
+const itemStore = useItemStore()
 </script>
 
 <template>
@@ -27,5 +31,10 @@ import { mySkeleton } from '@/shared/ui/skeleton'
     <p class="p">
       <mySkeleton />
     </p>
+    <baseButton
+      class="reset"
+      @click="itemStore.$reset"
+    >Default inventory values</baseButton
+    >
   </div>
 </template>

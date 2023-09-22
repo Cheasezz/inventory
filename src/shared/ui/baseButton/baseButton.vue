@@ -8,5 +8,6 @@ import './style.scss'
     class="button"
   >
     <slot name="icon"></slot>
+    <slot></slot>
   </button>
 </template>

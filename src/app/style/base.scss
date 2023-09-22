@@ -1,5 +1,10 @@
+@use '../../shared/ui/styleConfig';
+
 html {
   font-size: calc(1vh + 1vw);
+}
+body {
+background-color: styleConfig.$bg-color;
 }
 .h2{
   width: 100%;

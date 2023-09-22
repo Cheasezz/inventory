@@ -1,6 +1,8 @@
 .button {
   width: fit-content;
   height: fit-content;
+  font-size: .9rem;
   background: inherit;
   cursor: pointer;
+  transition: background .1s linear;
 }

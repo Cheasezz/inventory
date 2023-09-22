@@ -1,0 +1,13 @@
+@use '../../../../shared/ui/styleConfig';
+
+.drop-zone {
+  /* background-color: #fff; */
+  width: 100%;
+  height: 100%;
+  border: styleConfig.$border-color 1px solid;
+
+}
+.target {
+  transition: background .1s linear;
+  background-color: styleConfig.$main-color-hover;
+}
