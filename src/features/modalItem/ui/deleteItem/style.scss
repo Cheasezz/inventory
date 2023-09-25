@@ -1,0 +1,23 @@
+@use '../../../../shared/ui/styleConfig';
+
+.delete-confirm {
+  position: relative;
+  margin-top: auto;
+
+  .input-wrapper {
+    position: absolute;
+    bottom: 150%;
+    width: 100%;
+    height: fit-content;
+    @include styleConfig.bgColorWithBlur;
+    z-index: 2;
+    .hr {
+      width: 150%;
+      transform: translateX(-15%);
+    }
+  }
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,31 @@
+@use '../../../../shared/ui/styleConfig';
+
+.drag-el {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  color: #fff;
+  &__img {
+    flex: 1;
+    max-width: 75%;
+    // cursor: grab;
+  }
+  &__counter {
+    width: 1rem;
+    margin-top: auto;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 0.7rem;
+    border-top: styleConfig.$border-color 1px solid;
+    border-left: styleConfig.$border-color 1px solid;
+    border-top-left-radius: 10px;
+  }
+  &:hover {
+    background-color: styleConfig.$main-color-hover;
+    
+  }
+}

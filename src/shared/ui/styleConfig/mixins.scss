@@ -1,11 +1,30 @@
 @use 'vars.scss';
 
 @mixin mainItem {
-  padding: 14px;
-  margin: 24px;
+  padding: .6rem;
+  margin: 1rem;
   border: vars.$border-color 1px solid;
   border-radius: 12px;
   color: white;
   background-color: vars.$main-color;
   overflow: hidden;
+}
+
+@mixin bgWhiteHover {
+  background-color: vars.$white;
+  &:hover {
+    background-color: vars.$white-hover;
+  }
+}
+
+@mixin bgRedHover {
+  background-color: vars.$red;
+  &:hover {
+    background-color: vars.$red-hover;
+  }
+}
+
+@mixin bgColorWithBlur {
+  background-color: rgba($color: vars.$main-color, $alpha: 0.8);
+  backdrop-filter: blur(4px);
 }

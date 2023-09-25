@@ -1,0 +1,25 @@
+@use '../styleConfig';
+
+.modal {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 0.7rem;
+  @include styleConfig.bgColorWithBlur;
+  border-left: styleConfig.$border-color 1px solid;
+  overflow: hidden;
+  z-index: 1;
+  .button-close {
+    align-self: flex-end;
+  }
+  .img-wrapper {
+    .img {
+      width: 70%;
+    }
+  }
+}
+

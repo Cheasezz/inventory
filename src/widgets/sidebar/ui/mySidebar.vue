@@ -1,6 +1,6 @@
 <script setup>
 import './style.scss'
-import { useItemStore } from '@/entities/dragCell'
+import { useItemStore } from '@/entities/inventory'
 import { baseButton } from '@/shared/ui/baseButton'
 import { mySkeleton } from '@/shared/ui/skeleton'
 
@@ -16,25 +16,23 @@ const itemStore = useItemStore()
         alt="image"
       />
     </div>
-    <h2 class="h2">
-      <mySkeleton />
-    </h2>
-    <p class="p">
-      <mySkeleton />
-    </p>
-    <p class="p">
-      <mySkeleton />
-    </p>
-    <p class="p">
-      <mySkeleton />
-    </p>
-    <p class="p">
-      <mySkeleton />
-    </p>
+    <article class="article">
+      <h2 class="h2">
+        <mySkeleton />
+      </h2>
+      <p class="p">
+        <mySkeleton />
+        <mySkeleton />
+        <mySkeleton />
+        <mySkeleton />
+        <mySkeleton />
+        <mySkeleton />
+      </p>
+    </article>
     <baseButton
-      class="reset"
+      :white="true"
       @click="itemStore.$reset"
-    >Default inventory values</baseButton
+    >Сбросить инвентарь</baseButton
     >
   </div>
 </template>

@@ -1,8 +1,8 @@
 <script setup>
+import { mainScreen } from '@/shared/ui/layouts/mainScreen'
 import { myFooter } from '@/widgets/footer'
 import { mySidebar } from '@/widgets/sidebar'
-import { mainScreen } from '@/shared/ui/layouts/mainScreen'
-import { myInventory } from '@/features/inventory';
+import { interactiveInventory } from '@/widgets/interactiveInventory'
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import { myInventory } from '@/features/inventory';
       <mySidebar />
     </template>
     <template #inventory>
-      <myInventory />
+      <interactiveInventory />
     </template>
     <template #footer>
       <myFooter />

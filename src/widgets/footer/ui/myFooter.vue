@@ -1,7 +1,7 @@
 <script setup>
 import './style.scss'
-import { baseButton } from '@/shared/ui/baseButton'
 import { mySkeleton } from '@/shared/ui/skeleton'
+import { baseButton } from '@/shared/ui/baseButton'
 import { iconCross } from '@/shared/ui/icons'
 </script>
 
@@ -10,10 +10,10 @@ import { iconCross } from '@/shared/ui/icons'
     <h2 class="h2">
       <mySkeleton />
     </h2>
-    <baseButton
-    ><template #icon>
-      <iconCross class="cross" />
-    </template>
+    <baseButton :close="true">
+      <template #icon>
+        <iconCross />
+      </template>
     </baseButton>
   </div>
 </template>
